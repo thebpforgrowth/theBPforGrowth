@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: "Arial Black", Arial, sans-serif;
+  font-family: "Arial";
+  font-weight: bold;
   background-color: #54caf5;
 }
 
@@ -69,7 +70,8 @@ p {
   display: flex;
   align-items: center;
   border: 0px solid #000; /* USE TO SEE GRID */
-  font-family: "Arial Black", Arial, sans-serif; /* Set font family */
+  font-family: "Arial";
+  font-weight: bold;
 }
 
 a {

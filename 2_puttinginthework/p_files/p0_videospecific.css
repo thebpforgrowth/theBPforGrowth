@@ -1,6 +1,7 @@
     body {
       margin: 0;
-      font-family: "Arial Black", Arial, sans-serif; 
+      font-family: "Arial";
+      font-weight: bold;
       background-color: #54caf5;
     }
 
@@ -95,12 +96,14 @@
       color: #d2d2d2;
       font-size: 24px;
       font-family: Arial, sans-serif;
+      font-weight: lighter;
     }
 
     .blue_link {
       color: #aab4ff;
       font-size: 24px;
-      font-family: "Arial Black", Arial, sans-serif;
+      font-family: "Arial";
+      font-weight: bold;
     }
 
     a {
