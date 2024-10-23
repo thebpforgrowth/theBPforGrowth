@@ -4,6 +4,79 @@
       background-color: #54caf5;
     }
 
+    
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  width: 50px; /* Example width, adjust as needed */
+  padding-left: 10px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1px 1px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(152, 152, 152);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
     .sticky-header {
       position: fixed;
       top: 0;
@@ -17,18 +90,41 @@
       box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
     }
 
+    .grid-container-header {
+      display: grid;
+      grid-template-columns: auto 1fr auto; /* Three columns, with the middle column taking up the majority of the width */
+      gap: 10px; /* Adjust gap as needed */
+      align-items: center; /* Center items vertically */
+    }
+    
+    .grid-item-left, .grid-item-right {
+      /* Adjust width of left and right sections as needed */
+      width: 50px; /* Example width, adjust as needed */
+    }
+    
+    .grid-item-middle {
+      /* Middle section takes up remaining space */
+    }
+    
+    .hamburger-icon {
+      /* Style your hamburger icon as needed */
+      width: 70px; /* Example width, adjust as needed */
+    }
+    
+    .header-logo {
+      /* Your existing styles for the logo */
+      width: 350px;
+      height: auto;
+      margin-right: auto;
+      margin-left: 10px;
+    }
+
     .small-image {
       width: 50px; /* Adjust the width as needed */
       height: auto; /* Maintain aspect ratio */
       margin-right: 200px; /* Add some spacing between the small image and the logo */
   }
 
-  .header-logo {
-    width: 350px; /* Fixed width for the logo */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: auto; /* Pushes the logo to the left, centering it */
-    margin-left: 10px; /* Add some spacing between the small image and the logo */
-  }
   
 
     .grid-container {
@@ -97,9 +193,13 @@
       .grid-container2 {
         grid-template-columns: repeat(1, 1fr); /* One column */
         padding-bottom: 0px;
-        
       }
-      
+      .dropdown {
+        float: left;
+        overflow: hidden;
+        width: 50px; /* Example width, adjust as needed */
+        padding-left: 0px;
+      }
     }
 
     @media screen and (min-width: 601px) and (max-width: 900px) {

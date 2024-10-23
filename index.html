@@ -36,6 +36,25 @@
       transform: scale(1.1); /* Scale the image to 110% on hover */
     }
 
+    .sticky-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 5px 0;
+      text-align: center;
+      color: #a29fef;
+      z-index: 1000; /* Ensure it's above other content */
+      box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+      font-family: "Arial";
+      font-weight: bold;
+    }
+
+    .p {
+        color: #cca5e9;
+    }
+
     @media only screen and (max-width: 900px) {
         .blueprint-logo {
             max-width: 375px; /* Adjust the size for mobile */
@@ -54,5 +73,13 @@
         <img id="redirectButton" src="welcome.png" alt="Button Image" onclick="redirectToHubPage()">
     </a>
 </div>
+
+<footer class="sticky-footer">
+    <div class="email-input">
+        <p>a free positive video resource inspiring personal growth 
+        </p>
+    </div>
+  </footer>
+
 </body>
 </html>

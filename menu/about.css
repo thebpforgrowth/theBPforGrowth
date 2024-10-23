@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: "Arial";
+  font-weight: bold;
+  background-color: #54caf5;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #8a95ed;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  z-index: 1000; /* Ensure it's above other content */
+  box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.header-logo {
+  width: 350px; /* Fixed width for the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Adjust the height of the container as needed */
+    margin-bottom: -80px; /* Decrease the margin-bottom to bring it closer to the grid container */
+  }
+  
+.image-container img {
+    width: 350px;
+    height: auto; 
+  }
+  
+img {
+  transition: transform 0.3s ease; 
+  max-width: 70%; 
+  max-height: 100%;
+}
+
+
+/*
+!!!!!!!!!!!!!!MAKE CLASS AND USE FOR certain words to link
+p:hover {
+  transform: scale(1.05);
+}
+*/
+
+p {
+  transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.1); 
+}
+
+.grid-container {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+  max-width: 1200px; /* Limit maximum width of grid */
+  padding: 0 15%; /* Add padding to the left and right relative to the width of the browser */
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  border: 0px solid #000; /* USE TO SEE GRID */
+  grid-gap: 10px;
+  font-family: "Arial";
+  font-weight: bold;
+  padding-bottom:10px;
+}
+
+a {
+  text-decoration: none; /* Remove underline from all anchor tags */
+}
+
+a:hover {
+  transform: scale(1.05);
+}
+
+.grid-item img {
+  max-width: 80px; /* Ensure the image fits within its container */
+  height: auto; /* Maintain aspect ratio */
+  align-items: center;
+  margin-left: 20px; /* Adjust spacing between text and image */
+  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Allow image to shrink but not exceed its original size */
+}
+
+.grey_tool {
+  color: #909090;
+  font-size: 30px;
+}
+
+.white {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.blue_title {
+  color: #7480df;
+  font-size: 30px;
+}
+
+.blue_title:hover {
+  color: #3d3e5f;
+}
+
+.grey_speakers {
+  color: #909090;
+  font-size: 25px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* One column */
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+  }
+}

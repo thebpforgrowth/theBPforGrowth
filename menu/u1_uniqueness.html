@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U1 Uniqueness</title>
+  <link rel="stylesheet" href="u0_videospecific.css">
+</head>
+<body>
+
+  <header class="sticky-header">
+    <a href="../../hub.html">
+       <img src="u_images/blueprintmain.png" alt="BLUEPRINT_HEADER" class="header-logo">
+    </a>
+  </header>
+
+  <div class="grid-container">
+
+    <div class="grid-item">
+      <a href="../uniqueness_hub.html">
+      <img src="u_images/uniqueness_return.png" alt="UNIQUENESS_RETURN">
+      </a>
+    </div>
+
+    <div class="video-container">
+      <iframe width="782" height="440" src="https://www.youtube.com/embed/VDcGHQSgZiw?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="grid-item">
+      <img src="u_images/share.png" alt="SHARE" id="shareButton">
+    </div>
+
+    <div class="grid-item">
+    </div>
+
+    <div class="grid-item">
+      <p class="centered_title"><span class="grey_tool">U1</span>
+        <span class="white_title"> UNIQUENESS</span>
+        <br>
+        <!--
+        <span class="grey_ourtake"> OUR TAKEAWAYS:</span>
+        <span class="grey_ourtakewrite"> in this video casey says that he is doing this and doing that, which happens to mean that isn't doing the other when is focused on this.</span>
+         -->
+    </p>
+    
+    </div>
+    <div class="grid-item">
+      <div class="credits_box">
+        <p>
+          <span class="white_credits">CREDITS</span>
+          <br>
+          <span class="grey_speakers"> SPEAKERS:</span>
+          <span class="grey_speakerswrite"> rick rubin, aubrey marcus</span>
+          <br>
+          <span class="grey_speakers"> SOURCE:</span>
+          <span class="grey_speakerswrite"> Aubrey Marcus Podcast</span>
+          <br>
+          <span class="blue_link"> <a href="https://www.youtube.com/watch?v=N0n8bACL3DA" target="_blank"> watch full source here</a></span>
+          <br>
+          <span class="blue_link"> <a href="https://a.co/d/cMOtHZS" target="_blank"> rick rubin's book here</a></span>
+      </p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script>
+    // JavaScript to copy the current page URL to clipboard
+    document.getElementById("shareButton").addEventListener("click", function() {
+      var dummy = document.createElement("textarea");
+      document.body.appendChild(dummy);
+      dummy.value = window.location.href;
+      dummy.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummy);
+      
+      alert("Page link copied to clipboard!");
+    });
+  </script>
+
+</body>
+</html>
