@@ -107,6 +107,12 @@
       font-weight: bold;
     }
 
+    .speaker_link {
+      color: #d2d2d2;
+      font-size: 24px;
+      font-family: "Arial";
+    }
+
     a {
       color: #bdc5fd;
     }
