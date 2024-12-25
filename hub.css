@@ -1,8 +1,8 @@
-    body {
-      margin: 0;
-      font-family: "Arial Black", Arial, sans-serif;
-      background-color: #54caf5;
-    }
+body {
+  margin: 0;
+  font-family: "Arial Black", Arial, sans-serif;
+  background-color: #54caf5;
+}
 
     
 /* Navbar container */
@@ -199,6 +199,23 @@
         overflow: hidden;
         width: 50px; /* Example width, adjust as needed */
         padding-left: 0px;
+      }
+      .sticky-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #8a95ed;
+        padding: 18px 0;
+        text-align: center;
+        color: #fff;
+        z-index: 1000; /* Ensure it's above other content */
+        box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+      }
+      .grid-container {
+        display: grid;
+        gap: 0px; /* Gap between grid items */
+        padding-top: 80px; /* Adjust according to the height of your header */
       }
     }
 
