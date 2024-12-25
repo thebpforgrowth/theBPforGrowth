@@ -136,6 +136,37 @@ a:hover {
   .grid-container {
     grid-template-columns: repeat(1, 1fr); /* One column */
   }
+  .white {
+    color: #ffffff;
+    font-size: 18px;
+    /* font-size: 30px; old size before shrink*/
+  }
+  
+  .blue_title {
+    color: #7480df;
+    font-size: 18px;
+  }
+  
+  .blue_title:hover {
+    color: #3d3e5f;
+  }
+  
+  .grey_speakers {
+    color: #909090;
+    font-size: 18px;
+  }
+  
+  .speaker_link {
+    color: #7480df;
+    font-size: 18px;
+    font-family: "Arial";
+  }
+  
+  .speaker_link:hover {
+    color: #3d3e5f;
+    transform: scale(1.1); 
+  }
+  
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
