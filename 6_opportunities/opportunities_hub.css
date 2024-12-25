@@ -28,7 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 40vh; /* Adjust the height of the container as needed */
-    margin-bottom: -120px; /* Decrease the margin-bottom to bring it closer to the grid container */
+    margin-bottom: -80px; /* Decrease the margin-bottom to bring it closer to the grid container */
   }
   
 .image-container img {
@@ -42,13 +42,13 @@ img {
   max-height: 100%;
 }
 
+.image_hover:hover {
+  transform: scale(1.2);
+}
 
-/*
-!!!!!!!!!!!!!!MAKE CLASS AND USE FOR certain words to link
 p:hover {
   transform: scale(1.05);
 }
-*/
 
 p {
   transition: transform 0.3s ease;
@@ -62,25 +62,19 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
   gap: 20px;
   max-width: 1200px; /* Limit maximum width of grid */
-  padding: 0 15%; /* Add padding to the left and right relative to the width of the browser */
+  padding: 0 12%; /* Add padding to the left and right relative to the width of the browser */
 }
 
 .grid-item {
   display: flex;
   align-items: center;
   border: 0px solid #000; /* USE TO SEE GRID */
-  grid-gap: 10px;
   font-family: "Arial";
   font-weight: bold;
-  padding-bottom:10px;
 }
 
 a {
   text-decoration: none; /* Remove underline from all anchor tags */
-}
-
-a:hover {
-  transform: scale(1.05);
 }
 
 .grid-item img {
@@ -97,35 +91,14 @@ a:hover {
   font-size: 30px;
 }
 
-.white {
+.white_title {
   color: #ffffff;
-  font-size: 23px;
-  /* font-size: 30px; old size before shrink*/
-}
-
-.blue_title {
-  color: #7480df;
-  font-size: 23px;
-}
-
-.blue_title:hover {
-  color: #3d3e5f;
+  font-size: 30px;
 }
 
 .grey_speakers {
   color: #909090;
-  font-size: 23px;
-}
-
-.speaker_link {
-  color: #7480df;
-  font-size: 23px;
-  font-family: "Arial";
-}
-
-.speaker_link:hover {
-  color: #3d3e5f;
-  transform: scale(1.1); 
+  font-size: 25px;
 }
 
 
