@@ -163,7 +163,7 @@ body {
       left: 0;
       width: 100%;
       background-color: #ffffff;
-      padding: 5px 0;
+      padding: 6px 0;
       text-align: center;
       color: #fff;
       z-index: 1000; /* Ensure it's above other content */
@@ -177,6 +177,10 @@ body {
       color: #fff;
       cursor: pointer;
       font-family: "Arial Black", Arial, sans-serif;
+    }
+
+    .button {
+      font-size: 15px;
     }
 
     
