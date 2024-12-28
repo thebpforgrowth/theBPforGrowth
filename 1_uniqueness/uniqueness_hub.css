@@ -53,6 +53,10 @@ p:hover {
 }
 */
 
+p:hover {
+  transform: scale(1.05);
+}
+
 p {
   transition: transform 0.3s ease;
 }
