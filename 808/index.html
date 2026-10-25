@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b69">
+  <title>808 Scavenger Hunt</title>
+  <link rel="stylesheet" href="css/scavenger-hunt.css">
+</head>
+<body class="hunt-page">
+  <header class="site-header">
+    <a class="brand-link" href="index.html" aria-label="808 Scavenger Hunt home">
+      <img class="brand-logo" src="images/808logo.png" alt="808 Scavenger Hunt logo">
+    </a>
+  </header>
+
+  
+  <main class="page-main">
+    
+    <section class="intro" aria-labelledby="page-title">
+    <h1 id="page-title">Find 8 Native Plants to Take Home A Record or CD</h1>
+
+    <p class="intro-note">
+        Turn on your flashlight & search theDOJEAUX! Tap each plant you find.
+        Choose at least eight to take home a vinyl or CD. Can you find them all?!
+    </p>
+</section>
+
+<div class="progress-sticky">
+    <div class="progress-line" aria-live="polite">
+        <span id="selection-count">0 plants selected</span>
+        <span id="selection-target">8 needed</span>
+    </div>
+
+    <div class="progress-track" aria-hidden="true">
+        <div id="progress-fill" class="progress-fill"></div>
+    </div>
+</div>
+
+    <section id="plant-grid" class="plant-grid" aria-label="Native plant checklist">
+      <!-- PLANT CARD DATA: change each name, image path, and alt text to your actual plants. -->
+      <button class="plant-card" type="button" data-plant-id="plant-01" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/swampsunflower.png" alt="Add photo of native plant 1" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Swamp Sunflower</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-02" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/zinnia.png" alt="Add photo of native plant 2" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Zinnia</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-03" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/lantana.png" alt="Add photo of native plant 3" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Lantana</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-04" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/passionflower.png" alt="Add photo of native plant 4" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Passion Flower (from Passion Vine)</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-05" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/bluemistflower.png" alt="Add photo of native plant 5" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Blue Mistflower</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-06" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/bayleaf.png" alt="Add photo of native plant 6" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Bay Leaf Tree</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-07" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/goldenrod.png" alt="Add photo of native plant 7" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Golden Rod</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-08" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/jasmine.png" alt="Add photo of native plant 8" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">White Star Jasmine</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-09" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/whiteaster.png" alt="Add photo of native plant 9" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">White Aster</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-10" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/wisteria.png" alt="Add photo of native plant 10" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Wisteria</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-11" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/moonflower.png" alt="Add photo of native plant 11" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Moonflower (from Moonvine)</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-12" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/elephantears.png" alt="Add photo of native plant 12" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Mamaw's Elephant Ears</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-13" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/cypress.png" alt="Add photo of native plant 13" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Cypress Tree</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-15" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/kumquat.png" alt="Add photo of native plant 15" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Kumquat</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-16" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/dragonfruit.png" alt="Add photo of native plant 16" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Dragon Fruit</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-17" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/holly.png" alt="Add photo of native plant 17" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Holly Tree</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-18" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/monstera.png" alt="Add photo of native plant 18" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Monstera</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-19" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/pecan.png" alt="Add photo of native plant 19" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Pecan Tree</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-20" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/owlhouse.png" alt="Add photo of native plant 20" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">Resurrection Fern</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-21" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/owlhouse.png" alt="Add photo of native plant 20" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">BONUS: Owl House</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+      <button class="plant-card" type="button" data-plant-id="plant-22" aria-pressed="false">
+        <span class="plant-image-wrap"><img src="images/plants/owlhouse.png" alt="Add photo of native plant 20" onerror="this.parentElement.classList.add('image-placeholder');this.hidden=true"></span>
+        <span class="plant-label">BONUS: Yard Crab</span><span class="selected-check" aria-hidden="true">✓</span>
+      </button>
+    </section>
+  </main>
+
+  <div class="submit-dock">
+    <button id="submit-button" class="submit-button" type="button" disabled>
+      <span class="submit-title">SUBMIT</span>
+      <span id="submit-hint" class="submit-hint">Select 8 more plants to unlock</span>
+    </button>
+  </div>
+  <div id="announcement" class="visually-hidden" aria-live="polite"></div>
+  <script src="js/scavenger-hunt.js"></script>
+</body>
+</html>

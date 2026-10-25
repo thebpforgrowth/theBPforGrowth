@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b69">
+  <title>808 Scavenger Hunt — Next Step</title>
+  <link rel="stylesheet" href="css/scavenger-hunt.css">
+  <style>
+    .completion-panel {
+      width: min(100%, 640px);
+      margin: clamp(32px, 8vh, 88px) auto;
+      padding: clamp(24px, 6vw, 42px);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 24px;
+      background: rgba(9, 28, 52, .35);
+      text-align: center;
+    }
+    .completion-panel h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 6vw, 2.7rem);
+      line-height: 1.1;
+    }
+    .completion-panel p {
+      margin: 0 auto 24px;
+      max-width: 480px;
+      color: rgba(255,255,255,.8);
+      line-height: 1.55;
+    }
+    .inventory-link {
+      display: inline-flex;
+      min-height: 56px;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 24px;
+      border: 3px solid #fff4a4;
+      border-radius: 16px;
+      color: #453600;
+      background: #ffe34d;
+      font-weight: 900;
+      letter-spacing: .05em;
+      text-decoration: none;
+      box-shadow: 0 0 22px rgba(255,219,34,.55);
+      transition: transform 250ms ease, box-shadow 250ms ease;
+    }
+    .inventory-link:hover {
+      transform: scale(1.025);
+      box-shadow: 0 0 30px rgba(255,219,34,.75);
+    }
+    .status-note {
+      margin-top: 18px !important;
+      margin-bottom: 0 !important;
+      font-size: .85rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand-link" href="index.html" aria-label="Back to 808 Scavenger Hunt">
+      <img class="brand-logo" src="images/808logo.png" alt="808 Scavenger Hunt logo">
+    </a>
+  </header>
+  <main class="page-main">
+    <section class="completion-panel">
+      <h1>Congrats!</h1>
+      <p id="completion-message">Thanks for taking part in the 808 Scavenger Hunt. Continue to browse the vinyl records & CDs and check out one that is still available.</p>
+
+      <!-- Replace this URL after deploying apps-script as a web app. -->
+      <a class="inventory-link" id="vinyl-app-link" href="https://script.google.com/macros/s/AKfycbyi4DUfTs8zRyNwzx9kWucVtT3aIlEjlYDeg6Kobuur5DC2od7leKIipgyGiRMMD3r-zg/exec" rel="noopener">BROWSE THE VINYL/CD INVENTORY</a>
+      <p class="status-note">Each record can only be checked out once.</p>
+    </section>
+  </main>
+  <script>
+    // Replace the placeholder URL above with your deployed Apps Script /exec URL.
+    try {
+      const plants = JSON.parse(sessionStorage.getItem("808-selected-plants") || "[]");
+      if (plants.length >= 8) {
+        document.getElementById("completion-message").textContent =
+          `You found ${plants.length} native plants at theDOJEAUX. Thanks for taking part! Continue to browse the vinyl records & CDs and check out one that is still available.`;
+      }
+    } catch (_) {}
+  </script>
+</body>
+</html>
